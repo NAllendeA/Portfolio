@@ -4,148 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <header class="hero" id="top">
-        <nav class="nav">
-            <div class="logo">NA</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a class="cta" href="mailto:nallendea@fen.uchile.cl">Let’s Talk</a>
-        </nav>
-        <div class="hero-content">
-            <span class="hero-tag">Data Scientist in the making</span>
-            <h1>Hi, I’m Nicolás — turning curiosity into data-driven stories.</h1>
-            <p>
-                I love digging into complex datasets, building intuitive tools, and sharing actionable insights. I’m currently honing my analytical toolkit through graduate studies while experimenting with real-world projects.
-            </p>
-            <div class="hero-actions">
-                <a class="btn primary" href="#projects">View Projects</a>
-                <a class="btn ghost" href="https://nallendea.github.io/redirect_Linkedin/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-            </div>
-        </div>
-        <div class="hero-illustration" aria-hidden="true">
-            <div class="orbit"></div>
-            <div class="orbit slow"></div>
-            <div class="planet"></div>
-        </div>
-    </header>
+    <header>
+    <h1>👨‍💻 My Portfolio</h1>
+    <p>Hello! I’m an aspiring data scientist, excited to grow my skills by working on projects that spark my curiosity.</p>
+</header>
 
-    <main>
-        <section id="about" class="section">
-            <div class="section-heading">
-                <span>About</span>
-                <h2>My path into data science</h2>
-            </div>
-            <div class="about-grid">
-                <p>
-                    With a foundation in Business, I’m expanding into data science to bridge strategy and analytics. I enjoy transforming raw data into meaningful narratives that guide decision-making. I’m comfortable designing experiments, building dashboards, and communicating findings to stakeholders.
-                </p>
-                <div class="highlight-card">
-                    <h3>What I’m focused on</h3>
-                    <ul>
-                        <li>Designing data products that solve real problems</li>
-                        <li>Sharpening machine learning fundamentals</li>
-                        <li>Collaborating with multidisciplinary teams</li>
-                    </ul>
-                </div>
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I hold a degree in Business and am currently pursuing a master’s program to deepen my knowledge in data science and analytics. My primary expertise lies in Python, complemented by SQL skills and foundational knowledge in web development. I am passionate about using data to derive actionable insights and I enjoy exploring and learning about new tools, technologies, and ideas.
+        </p>
+    </section>
+
+
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>League of Legends Champion Recommendation app</h3>
+                <p>A simple app that recommends champions to maximize win rate in League of Legends, based on having all other picks.</p>
+                <a href="https://championpickapp-kfii5ncafk9xl3fmcdm6ui.streamlit.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/NAllendeA/Champion_pick_app">GitHub Repo</a>
             </div>
         </section>
 
-        <section id="skills" class="section muted">
-            <div class="section-heading">
-                <span>Skills</span>
-                <h2>Tools I use to explore ideas</h2>
-            </div>
-            <div class="skill-chips">
-                <span class="chip">Python</span>
-                <span class="chip">Pandas</span>
-                <span class="chip">Scikit-Learn</span>
-                <span class="chip">SQL</span>
-                <span class="chip">Streamlit</span>
-                <span class="chip">Data Visualization</span>
-                <span class="chip">A/B Testing</span>
-                <span class="chip">Storytelling</span>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="section-heading">
-                <span>Projects</span>
-                <h2>Recent experiments and builds</h2>
-            </div>
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>League of Legends Champion Recommendation App</h3>
-                        <span class="project-year">2024</span>
-                    </div>
-                    <p>
-                        Built a Streamlit tool that recommends champion picks to maximize win rate by analyzing team compositions and historical performance data.
-                    </p>
-                    <ul class="project-tags">
-                        <li>Python</li>
-                        <li>Streamlit</li>
-                        <li>Data Pipelines</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://championpickapp-kfii5ncafk9xl3fmcdm6ui.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-                        <a href="https://github.com/NAllendeA/Champion_pick_app" target="_blank" rel="noopener">GitHub Repo</a>
-                    </div>
-                </article>
-                <article class="project-card future">
-                    <div class="project-header">
-                        <h3>Next Up: Customer Churn Dashboard</h3>
-                        <span class="project-year">In progress</span>
-                    </div>
-                    <p>
-                        Designing an interactive dashboard that tracks churn signals for subscription services, combining retention metrics, cohort analysis, and actionable alerts.
-                    </p>
-                    <ul class="project-tags">
-                        <li>SQL</li>
-                        <li>Power BI</li>
-                        <li>Business Strategy</li>
-                    </ul>
-                    <div class="project-links">
-                        <span class="badge">Coming Soon</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="section muted">
-            <div class="section-heading">
-                <span>Contact</span>
-                <h2>Let’s build something together</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <a href="mailto:nallendea@fen.uchile.cl">nallendea@fen.uchile.cl</a>
-                </div>
-                <div class="contact-card">
-                    <h3>LinkedIn</h3>
-                    <a href="https://nallendea.github.io/redirect_Linkedin/" target="_blank" rel="noopener">Nicolás Allende</a>
-                </div>
-                <div class="contact-card">
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/NAllendeA" target="_blank" rel="noopener">@NAllendeA</a>
-                </div>
-            </div>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:nallendea@fen.uchile.cl">nallendea@fen.uchile.cl</a></p>
+            <p>LinkedIn: <a href="https://nallendea.github.io/redirect_Linkedin/" target="_blank">Nicolás Allende</a></p>
+            <p>GitHub: <a href="https://github.com/NAllendeA" target="_blank">NAllendeA</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Nicolás Allende. Crafted with curiosity and coffee.</p>
-        <a class="back-to-top" href="#top">Back to top ↑</a>
+        <p>&copy; 2025 My Portfolio</p>
     </footer>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
