@@ -1,57 +1,94 @@
-/* General styles */
+:root {
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Header styles */
-header {
-    background: #333;
-    color: #fff;
+.maintenance {
+    max-width: 32rem;
+    padding: 2.5rem 2rem;
     text-align: center;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-header h1 {
+.maintenance h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
     margin: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
-/* Section styles */
-section {
-    margin: 2rem;
+.maintenance p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-h2 {
-    color: #333;
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-/* Project cards */
-.project {
-    background: #f4f4f4;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
-}
-
-.project a {
-    margin-right: 1rem;
-    color: #007bff;
+.link-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
     text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    background: #333;
     color: #fff;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.link-list a:hover,
+.link-list a:focus-visible {
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+}
+
+.icon svg {
     width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+@media (min-width: 40rem) {
+    .link-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .link-list a {
+        min-width: 9rem;
+    }
 }
